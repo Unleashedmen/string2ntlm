@@ -3,5 +3,5 @@
 
 import hashlib
 
-passwd = input('Enter your password: ')
-print (hashlib.new('md4', passwd.encode('utf-16le')).hexdigest())
+passwd = input('\nEnter your password: ')
+print ("NTLM hash:" + hashlib.new('md4', passwd.encode('utf-16le')).hexdigest())
